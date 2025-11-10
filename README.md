@@ -1,1 +1,1 @@
-# 50_days_challenge  , before 2026
+# 50_days_challenge
