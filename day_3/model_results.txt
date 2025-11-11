@@ -1,0 +1,6 @@
+Toyota Corolla MLR Model Results
+========================================
+Linear_Train_Score: 0.870
+Linear_Test_Score: 0.843
+Lasso_Score: -0.001
+Ridge_Score: 0.843
