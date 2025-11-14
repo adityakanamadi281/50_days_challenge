@@ -31,6 +31,13 @@ doc_embeddings = np.array([embedding_model.embed_query(text) for text in texts])
 doc_embeddings = np.array([emb / np.linalg.norm(emb) for emb in doc_embeddings])
 
 
+
+dimension = doc_embeddings.shape[1]
+index = faiss.IndexFlatL2(dimension)
+
+# Add embeddings to the FAISS index
+index.add(doc_embeddings)
+
 query = "Explain the role of FAISS in vector retrieval."
 
 query_embedding = embedding_model.embed_query(query)
