@@ -9,3 +9,21 @@ class Student:
 
 s1 = Student("Aditya", 20, "A")
 s1.display()
+
+
+
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+r = Rectangle(10, 5)
+print("Area:", r.area())
+print("Perimeter:", r.perimeter())
