@@ -18,7 +18,7 @@ import mysql.connector
 db=mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Kanamadi@2002",
+    password="your password",
     database="walmart"
 )
 query="SELECT * FROM Sales;"
@@ -40,7 +40,7 @@ db1 = client["mydatabase"]
 collection = db1["users"]
 
 mongo_data = pd.DataFrame(list(collection.find()))
-#print(mongo_data.head())
+print(mongo_data.head())
 
 
 
